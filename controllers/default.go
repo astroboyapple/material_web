@@ -30,6 +30,15 @@ func (this *LoginController) Get() {
 	this.TplNames = "page-login.html"
 }
 
+func (this *LoginController) Post() {
+	// jsoninfo := this.GetString("jsoninfo")
+	// if jsoninfo == "" {
+	// 	this.Ctx.WriteString("jsoninfo is empty")
+	// 	return
+	// }
+	this.TplNames = "index.html"
+}
+
 type AmberController struct {
 	beego.Controller
 }

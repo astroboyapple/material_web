@@ -6,7 +6,6 @@ import (
 )
 
 func init() {
-
 	beego.Router("/", &controllers.MainController{})
 	beego.Router("/index.html", &controllers.IndexController{})
 	beego.Router("/page-login.html", &controllers.LoginController{})
@@ -30,4 +29,5 @@ func init() {
 	beego.Router("/ui-tab.html", &controllers.UiTabController{})
 	beego.Router("/ui-table.html", &controllers.UiTableController{})
 	beego.Router("/ui-tile.html", &controllers.UiTitleController{})
+	beego.Router("/login", &controllers.LoginController{})
 }
